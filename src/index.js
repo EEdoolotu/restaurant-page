@@ -24,4 +24,20 @@ document.getElementById('contact-btn').addEventListener('click', () => {
     loadContact();
 });
 
+const navButtons = document.querySelectorAll("button") 
+
+navButtons.forEach(button => {
+    button.addEventListener("click", (e) => {
+        navButtons.forEach(btn => btn.classList.remove("active"))
+
+        e.target.classList.add("active")
+    })
+})
+
+const foot = document.querySelector("footer")
+const footerText = document.createElement("p")
+
+footerText.textContent = "Created by Ejiroghene for The Odin project"
+foot.appendChild(footerText)
+
 loadHome();
