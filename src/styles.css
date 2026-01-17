@@ -1,0 +1,90 @@
+/* General Setup */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #333;
+    width: 100%;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: white;
+    color: #333;
+}
+
+/* Content Area */
+#content {
+    max-width: 800px;
+    width: 90%;
+    background-color: #1a1a1a;;
+    margin: 40px 0;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+#content h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+#content p {
+    line-height: 1.6;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#content img {
+    border-radius: 10px;
+    margin: 20px 0;
+    max-width: 50%;
+    height: auto;
+}
+
+/* Menu List Styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 5px solid #333;
+    font-weight: bold;
+}
+
+/* Contact Specific Styling */
+.contact-container {
+    margin-top: 20px;
+    text-align: left;
+    display: inline-block;
+}
